@@ -99,10 +99,10 @@ export const Navbar: React.FC<NavbarProps> = ({ theme, onToggleTheme, onOpenAdmi
           <button
             onClick={onOpenAdmin}
             className="px-3 py-1.5 rounded text-xs font-mono bg-slate-100 hover:bg-slate-200 dark:bg-obsidian-850 dark:hover:bg-obsidian-800 text-slate-800 dark:text-brand-300 border border-slate-200 dark:border-brand-500/30 flex items-center gap-1.5 transition-colors"
-            title="Access D1 Cloudflare Inquiries Database"
+            title="Access Super Admin Dashboard (Properties CRUD & Leads)"
           >
-            <Database className="w-3.5 h-3.5 text-brand-500 dark:text-brand-400" />
-            <span>D1 Leads Hub</span>
+            <ShieldCheck className="w-3.5 h-3.5 text-brand-500 dark:text-brand-400" />
+            <span>Admin Portal</span>
           </button>
 
           <button

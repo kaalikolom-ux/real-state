@@ -143,10 +143,11 @@ export function App() {
         onBookTour={(projectTitle) => handleInquireProject(projectTitle)}
       />
 
-      {/* Cloudflare D1 Leads Hub Modal */}
+      {/* Cloudflare D1 Super Admin Dashboard Modal */}
       <AdminModal
         isOpen={isAdminOpen}
         onClose={() => setIsAdminOpen(false)}
+        onProjectUpdated={loadProjects}
       />
     </div>
   )
