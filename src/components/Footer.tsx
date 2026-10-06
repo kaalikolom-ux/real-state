@@ -29,11 +29,6 @@ export const Footer: React.FC = () => {
             <p className="text-slate-400 max-w-sm leading-relaxed text-xs">
               Conceiving monumental residences, private estates, and carbon-neutral civic towers across the world's most coveted horizons.
             </p>
-
-            <div className="pt-2 flex items-center gap-2 text-[11px] font-mono text-brand-400">
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse inline-block" />
-              <span>Cloudflare D1 & Edge Workers Active</span>
-            </div>
           </div>
 
           {/* Developments */}
@@ -92,7 +87,7 @@ export const Footer: React.FC = () => {
           </div>
 
           <div className="flex items-center gap-6">
-            <span>Powered by GitHub • Cloudflare D1 • Cloudflare Workers</span>
+            <span>Excellence in Sustainable Architecture & Masterplanning</span>
             <button
               onClick={scrollToTop}
               className="p-2 rounded bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white transition-colors flex items-center gap-1"
