@@ -35,11 +35,11 @@ export const Navbar: React.FC<NavbarProps> = ({ theme, onToggleTheme, onOpenAdmi
             <Building2 className="w-5 h-5 text-white dark:text-obsidian-950" />
           </div>
           <div>
-            <span className="font-display text-xl font-bold tracking-wider uppercase text-slate-900 dark:text-white block leading-none">
-              ASHIQUE
+            <span className="font-display text-lg sm:text-xl font-bold tracking-wider uppercase text-slate-900 dark:text-white block leading-none">
+              SUBIYA ASSET
             </span>
-            <span className="text-[10px] tracking-[0.25em] text-brand-600 dark:text-brand-400 uppercase font-semibold">
-              Developments
+            <span className="text-[9px] sm:text-[10px] tracking-[0.2em] text-brand-600 dark:text-brand-400 uppercase font-semibold block mt-0.5">
+              DEVELOPMENT LIMITED
             </span>
           </div>
         </a>

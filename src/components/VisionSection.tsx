@@ -48,7 +48,7 @@ export const VisionSection: React.FC = () => {
                 Architecture That Outlasts Generations.
               </h2>
               <p className="text-sm sm:text-base text-slate-700 dark:text-slate-300 font-light leading-relaxed">
-                Founded with a conviction that luxury should never be transient, ASHIQUE Developments conceives structures that harmonize nature, monumental civic presence, and private sanctity.
+                Founded with a conviction that luxury should never be transient, SUBIYA ASSET DEVELOPMENT LIMITED conceives structures that harmonize nature, monumental civic presence, and private sanctity.
               </p>
             </div>
 
