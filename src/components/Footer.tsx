@@ -12,18 +12,12 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
           {/* Brand Col */}
           <div className="lg:col-span-2 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-sm bg-gradient-to-br from-brand-300 to-brand-600 flex items-center justify-center shadow-lg">
-                <Building2 className="w-4 h-4 text-obsidian-950" />
-              </div>
-              <div>
-                <span className="font-display text-base sm:text-lg font-bold tracking-wider uppercase text-white block leading-none">
-                  SUBIYA ASSET
-                </span>
-                <span className="text-[8px] sm:text-[9px] tracking-[0.2em] text-brand-400 uppercase font-semibold block mt-0.5">
-                  DEVELOPMENT LIMITED
-                </span>
-              </div>
+            <div className="flex items-center mb-1">
+              <img
+                src="/logo-dark.png"
+                alt="SUBIYA ASSET DEVELOPMENT LIMITED"
+                className="h-11 sm:h-12 w-auto object-contain"
+              />
             </div>
 
             <p className="text-slate-400 max-w-sm leading-relaxed text-xs">

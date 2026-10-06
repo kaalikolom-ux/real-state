@@ -30,18 +30,12 @@ export const Navbar: React.FC<NavbarProps> = ({ theme, onToggleTheme, onOpenAdmi
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
         {/* Brand Logo */}
-        <a href="#" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-sm bg-gradient-to-br from-brand-400 to-brand-600 flex items-center justify-center shadow-lg shadow-brand-500/20 group-hover:scale-105 transition-transform">
-            <Building2 className="w-5 h-5 text-white dark:text-obsidian-950" />
-          </div>
-          <div>
-            <span className="font-display text-lg sm:text-xl font-bold tracking-wider uppercase text-slate-900 dark:text-white block leading-none">
-              SUBIYA ASSET
-            </span>
-            <span className="text-[9px] sm:text-[10px] tracking-[0.2em] text-brand-600 dark:text-brand-400 uppercase font-semibold block mt-0.5">
-              DEVELOPMENT LIMITED
-            </span>
-          </div>
+        <a href="#" className="flex items-center group py-1">
+          <img
+            src={theme === 'dark' ? '/logo-dark.png' : '/logo.png'}
+            alt="SUBIYA ASSET DEVELOPMENT LIMITED"
+            className="h-10 sm:h-12 w-auto object-contain transition-transform group-hover:scale-105 duration-300"
+          />
         </a>
 
         {/* Desktop Nav Links */}
