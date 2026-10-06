@@ -7,7 +7,7 @@ export const Footer: React.FC = () => {
   }
 
   return (
-    <footer className="bg-obsidian-950 border-t border-white/10 pt-16 pb-12 text-slate-400 text-xs">
+    <footer className="bg-slate-950 dark:bg-obsidian-950 border-t border-slate-800 dark:border-white/10 pt-16 pb-12 text-slate-400 text-xs transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
           {/* Brand Col */}
@@ -86,7 +86,7 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Bottom Legal & Technology Line */}
-        <div className="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
+        <div className="pt-8 border-t border-slate-800 dark:border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
           <div>
             © {new Date().getFullYear()} AURA Development Group Inc. All rights reserved. Equal Housing Opportunity.
           </div>

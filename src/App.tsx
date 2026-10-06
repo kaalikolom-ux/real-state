@@ -12,6 +12,7 @@ import { AdminModal } from './components/AdminModal'
 import { Footer } from './components/Footer'
 
 export function App() {
+  const [theme, setTheme] = useState<'dark' | 'light'>('dark')
   const [projects, setProjects] = useState<Project[]>([])
   const [loading, setLoading] = useState(true)
   const [activeCategory, setActiveCategory] = useState('All')
@@ -19,6 +20,31 @@ export function App() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null)
   const [isAdminOpen, setIsAdminOpen] = useState(false)
   const [inquiryTargetProject, setInquiryTargetProject] = useState<string>('')
+
+  // Theme initialization
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('aura_theme') as 'dark' | 'light' | null
+    const initialTheme = savedTheme || 'dark'
+    setTheme(initialTheme)
+    if (initialTheme === 'dark') {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  }, [])
+
+  const handleToggleTheme = () => {
+    setTheme((prev) => {
+      const next = prev === 'dark' ? 'light' : 'dark'
+      localStorage.setItem('aura_theme', next)
+      if (next === 'dark') {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+      return next
+    })
+  }
 
   // Fetch Projects from API (Cloudflare Worker -> Cloudflare D1)
   const loadProjects = async () => {
@@ -55,9 +81,11 @@ export function App() {
   }
 
   return (
-    <div className="min-h-screen bg-obsidian-950 text-slate-100 flex flex-col font-sans selection:bg-brand-500 selection:text-obsidian-950">
+    <div className="min-h-screen bg-[#fbf9f5] dark:bg-obsidian-950 text-slate-900 dark:text-slate-100 flex flex-col font-sans selection:bg-brand-500 selection:text-white dark:selection:text-obsidian-950 transition-colors duration-300">
       {/* Top Navbar */}
       <Navbar
+        theme={theme}
+        onToggleTheme={handleToggleTheme}
         onOpenAdmin={() => setIsAdminOpen(true)}
         onOpenInquiry={() => handleInquireProject()}
       />

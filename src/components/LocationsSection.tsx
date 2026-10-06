@@ -27,17 +27,17 @@ export const LocationsSection: React.FC = () => {
   ]
 
   return (
-    <section id="locations" className="py-24 relative bg-obsidian-950">
+    <section id="locations" className="py-24 relative bg-white dark:bg-obsidian-950 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="text-xs uppercase tracking-[0.25em] text-brand-400 font-semibold mb-2 flex items-center justify-center gap-2">
-            <Navigation className="w-4 h-4 text-brand-400" />
+          <div className="text-xs uppercase tracking-[0.25em] text-brand-600 dark:text-brand-400 font-semibold mb-2 flex items-center justify-center gap-2">
+            <Navigation className="w-4 h-4 text-brand-500 dark:text-brand-400" />
             Strategic Terrains
           </div>
-          <h2 className="text-3xl sm:text-5xl font-display font-medium text-white tracking-tight mb-4">
+          <h2 className="text-3xl sm:text-5xl font-display font-medium text-slate-900 dark:text-white tracking-tight mb-4">
             Prime Landmark Locations
           </h2>
-          <p className="text-sm text-slate-400 font-light">
+          <p className="text-sm text-slate-600 dark:text-slate-400 font-light">
             Every parcel in our portfolio is acquired through decades of land-banking foresight in irreproducible geographical coordinates.
           </p>
         </div>
@@ -46,17 +46,17 @@ export const LocationsSection: React.FC = () => {
           {LOCATIONS.map((loc, idx) => (
             <div
               key={idx}
-              className="group relative rounded-2xl overflow-hidden glass-panel border border-white/10 hover:border-brand-500/40 transition-all duration-500 flex flex-col"
+              className="group relative rounded-2xl overflow-hidden bg-slate-50 dark:bg-obsidian-900 border border-slate-200 dark:border-white/10 hover:border-brand-500/50 dark:hover:border-brand-500/40 transition-all duration-500 flex flex-col shadow-md dark:shadow-none"
             >
-              <div className="relative aspect-[16/10] overflow-hidden bg-obsidian-900">
+              <div className="relative aspect-[16/10] overflow-hidden bg-slate-100 dark:bg-obsidian-900">
                 <img
                   src={loc.image}
                   alt={loc.name}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-obsidian-950/40 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
                 <div className="absolute top-4 right-4">
-                  <span className="px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-obsidian-900/90 text-brand-300 border border-brand-500/30">
+                  <span className="px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-black/80 text-brand-300 border border-brand-500/30">
                     {loc.projectCount}
                   </span>
                 </div>
@@ -64,17 +64,17 @@ export const LocationsSection: React.FC = () => {
 
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="font-display text-xl font-bold text-white mb-1 group-hover:text-brand-300 transition-colors">
+                  <h3 className="font-display text-xl font-bold text-slate-900 dark:text-white mb-1 group-hover:text-brand-600 dark:group-hover:text-brand-300 transition-colors">
                     {loc.name}
                   </h3>
-                  <span className="text-xs text-brand-400 font-medium block mb-4">
+                  <span className="text-xs text-brand-600 dark:text-brand-400 font-medium block mb-4">
                     {loc.region}
                   </span>
 
-                  <div className="space-y-2 py-3 border-t border-white/5 text-xs text-slate-300">
+                  <div className="space-y-2 py-3 border-t border-slate-200 dark:border-white/5 text-xs text-slate-700 dark:text-slate-300">
                     {loc.features.map((feat, fidx) => (
                       <div key={fidx} className="flex items-center gap-2">
-                        <MapPin className="w-3.5 h-3.5 text-brand-400 flex-shrink-0" />
+                        <MapPin className="w-3.5 h-3.5 text-brand-500 dark:text-brand-400 flex-shrink-0" />
                         <span>{feat}</span>
                       </div>
                     ))}
