@@ -18,7 +18,7 @@ export const Footer: React.FC = () => {
               </div>
               <div>
                 <span className="font-display text-lg font-bold tracking-wider uppercase text-white block leading-none">
-                  AURA
+                  ASHIQUE
                 </span>
                 <span className="text-[9px] tracking-[0.25em] text-brand-400 uppercase font-semibold">
                   Developments
@@ -43,7 +43,7 @@ export const Footer: React.FC = () => {
             </h4>
             <ul className="space-y-2.5">
               <li><a href="#projects" className="hover:text-brand-300 transition-colors">The Obsidian Residences</a></li>
-              <li><a href="#projects" className="hover:text-brand-300 transition-colors">Aura One Financial Tower</a></li>
+              <li><a href="#projects" className="hover:text-brand-300 transition-colors">Ashique One Financial Tower</a></li>
               <li><a href="#projects" className="hover:text-brand-300 transition-colors">Elysium Hills Sanctuary</a></li>
               <li><a href="#projects" className="hover:text-brand-300 transition-colors">Solstice Bay Promenade</a></li>
               <li><a href="#projects" className="hover:text-brand-300 transition-colors">Vertex Innovation Campus</a></li>
@@ -71,11 +71,11 @@ export const Footer: React.FC = () => {
             <div className="space-y-2 text-slate-400">
               <p className="flex items-center gap-2">
                 <Mail className="w-3.5 h-3.5 text-brand-400" />
-                advisory@auradevelopments.com
+                advisory@ashiquedevelopments.com
               </p>
               <p className="flex items-center gap-2">
                 <Phone className="w-3.5 h-3.5 text-brand-400" />
-                +1 (800) 480-AURA
+                +1 (800) 480-ASHIQUE
               </p>
               <p className="pt-2 text-[11px] text-slate-500">
                 Mon - Sat: 08:00 - 20:00 EST <br />
@@ -88,7 +88,7 @@ export const Footer: React.FC = () => {
         {/* Bottom Legal & Technology Line */}
         <div className="pt-8 border-t border-slate-800 dark:border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
           <div>
-            © {new Date().getFullYear()} AURA Development Group Inc. All rights reserved. Equal Housing Opportunity.
+            © {new Date().getFullYear()} ASHIQUE Development Group Inc. All rights reserved. Equal Housing Opportunity.
           </div>
 
           <div className="flex items-center gap-6">

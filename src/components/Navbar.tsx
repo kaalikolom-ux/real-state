@@ -36,7 +36,7 @@ export const Navbar: React.FC<NavbarProps> = ({ theme, onToggleTheme, onOpenAdmi
           </div>
           <div>
             <span className="font-display text-xl font-bold tracking-wider uppercase text-slate-900 dark:text-white block leading-none">
-              AURA
+              ASHIQUE
             </span>
             <span className="text-[10px] tracking-[0.25em] text-brand-600 dark:text-brand-400 uppercase font-semibold">
               Developments
